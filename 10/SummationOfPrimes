@@ -1,0 +1,23 @@
+MAX = 2 * 1000 * 1000
+
+def is_prime(x)
+  l = 3
+  while l < ( Math.sqrt(x) + 1)
+    if x % l == 0
+      return false
+    end
+    l += 2
+  end
+  return true
+end
+
+sum = 2
+x = 3
+while x < MAX
+  if is_prime(x)
+    sum += x
+  end
+  x += 2
+end
+
+print sum

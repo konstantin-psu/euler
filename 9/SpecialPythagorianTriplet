@@ -1,0 +1,15 @@
+count=0
+(1..1000).each do |a|
+  (a..1000).each do |b|
+    count += 1
+    c = 1000 - b - a
+    if c <= b
+      break
+    end
+    if a*a + b*b == c*c
+        puts a*b*c
+        puts count
+        exit
+    end
+  end
+end

@@ -1,0 +1,11 @@
+
+def sum_sq(x)
+  a=x*(x+1)/2
+  a*a
+end
+
+def sq_sum(x)
+  x*(x+1)*(2*x+1)/6
+end
+
+puts (sq_sum(100) - sum_sq(100)).abs
