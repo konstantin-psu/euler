@@ -1,0 +1,16 @@
+p=1
+n=2
+c=0
+MAX = 4 *1000 * 1000
+#MAX=100
+res=2
+while c  < MAX
+  c = n + p
+  p=n
+  n=c
+  if c % 2 == 0 and c < MAX
+    res += c
+  end
+end
+
+puts res
