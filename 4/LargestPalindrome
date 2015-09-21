@@ -1,0 +1,23 @@
+def isPalidrome(x)
+  y  = x.to_s
+  y == y.reverse
+end
+max = 1001
+
+999.downto(101).each do |i|
+    i.downto(101).each do |j|
+      n=i*j
+      if n < max
+        break
+      end
+      if isPalidrome(n)
+        max = n
+        break
+      end
+    end
+    if i*i < max
+      break
+    end
+end
+
+puts max
