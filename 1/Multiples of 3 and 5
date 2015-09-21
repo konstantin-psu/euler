@@ -1,0 +1,10 @@
+x3=3
+x5=5
+sum=0
+(3..999).each do |x|
+  if x % x3 == 0 || x % x5 == 0
+    sum = sum + x
+  end
+end
+
+puts sum
