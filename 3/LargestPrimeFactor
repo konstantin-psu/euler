@@ -1,0 +1,12 @@
+
+N = 600851475143
+curr=3
+
+while N > curr
+  while N % curr == 0
+    N = N/curr
+  end
+  curr += 2
+end
+
+puts N
